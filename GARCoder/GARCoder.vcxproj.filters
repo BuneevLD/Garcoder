@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="DataModels.cu">
+      <Filter>codec</Filter>
+    </CudaCompile>
+    <CudaCompile Include="encodeKernel.cu">
+      <Filter>codec</Filter>
+    </CudaCompile>
+    <CudaCompile Include="helpers.cu">
+      <Filter>codec</Filter>
+    </CudaCompile>
+    <CudaCompile Include="prefixSum.cu">
+      <Filter>codec</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="helpers.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ArithmeticCodec.cpp">
+      <Filter>codec</Filter>
+    </ClCompile>
+    <ClCompile Include="CPUCodec.cpp">
+      <Filter>codec</Filter>
+    </ClCompile>
+    <ClCompile Include="Exceptions.cpp">
+      <Filter>codec</Filter>
+    </ClCompile>
+    <ClCompile Include="GPUCodec.cpp">
+      <Filter>codec</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="_Constants.h">
+      <Filter>codec</Filter>
+    </ClInclude>
+    <ClInclude Include="ArithmeticCodec.h">
+      <Filter>codec</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUCodec.h">
+      <Filter>codec</Filter>
+    </ClInclude>
+    <ClInclude Include="Exceptions.h">
+      <Filter>codec</Filter>
+    </ClInclude>
+    <ClInclude Include="GPUCodec.h">
+      <Filter>codec</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="codec">
+      <UniqueIdentifier>{42e7eae7-e5ec-486f-9489-d828153017d3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
