@@ -1,4 +1,10 @@
 # Garcoder
 Generic arithmetic codec implementation for CUDA
 
-Currently supports static binary, adaptive binary, context-adaptive binary and context-adaptive byte data models. Other data models are welcomed!
+Data models supported:
+- static binary
+- adaptive binary
+- context-adaptive binary
+- context-adaptive byte
+
+Context-adaptive byte model seems to give the best efficiency, while being marginally slower than others. Requires a lot of video memory.  
